@@ -21,20 +21,22 @@ int main(int argc, char *argv[]){
         string disciplina;
         float nota_1;
         float nota_2;
+        float media_simples;
     };
 
-    struct cadastro vetor_aluno;
+    struct cadastro aluno1;
 
-    vetor_aluno.nome = recebe_nome_aluno();
-    vetor_aluno.disciplina = recebe_disciplina_aluno();
-    vetor_aluno.nota_1 = recebe_nota_1();
-    vetor_aluno.nota_2 = recebe_nota_2();
+    aluno1.nome = recebe_nome_aluno();
+    aluno1.disciplina = recebe_disciplina_aluno();
+    aluno1.nota_1 = recebe_nota_1();
+    aluno1.nota_2 = recebe_nota_2();
 
-    cout << "Nome = " << vetor_aluno.nome << endl;
-    cout << "Disciplina = " << vetor_aluno.disciplina << endl;
-    cout << "Nota 1 = " << vetor_aluno.nota_1 << endl;
-    cout << "Nota 2 = " << vetor_aluno.nota_2 << endl;
-    cout << "Média Simples = " << (vetor_aluno.nota_1 + vetor_aluno.nota_2) / 2 << endl;
+    cout << "Nome = " << aluno1.nome << endl;
+    cout << "Disciplina = " << aluno1.disciplina << endl;
+    cout << "Nota 1 = " << aluno1.nota_1 << endl;
+    cout << "Nota 2 = " << aluno1.nota_2 << endl;
+    aluno1.media_simples = (aluno1.nota_1 + aluno1.nota_2) / 2;
+    cout << "Média Simples = " << aluno1.media_simples  << endl;
     return 0;
 }
 
